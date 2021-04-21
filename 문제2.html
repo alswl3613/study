@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var A_1 = 14000;
+        var A_2 = 30000;
+        var A_3 = 4000;
+
+        var B_1 = 6900;
+        var B_2 = 0;
+        var B_3 = 10;
+
+        var C_1 = 5500;
+        var C_2 = 2000;
+        var C_3 = 700;
+
+        var chk_1 = false;   
+        var chk_2 = false;   
+        var chk_3 = false;   
+
+        if(A_1>10000){
+            if(A_2>5000){
+                if(A_3>2000){                
+                    chk_1 = true;
+                }
+            }
+        }
+        if(B_1>5000){
+            if(B_2>5000){
+                if(B_3>500){
+                    chk_2 =true;
+                }
+            }
+        }
+        if(C_1<5000){
+            if(C_2=0){
+                if(C_3<500){
+                    chk_3 =true;  
+                }
+            }
+        }
+        
+        if(chk_1){
+            document.write("VVIP 등급입니다");
+        }
+
+        if(chk_2){
+            document.write("VIP 등급입니다");
+        }
+        if(chk_3){
+            document.write("VIP 등급입니다");
+        }
+        if(!(chk_3 && chk_2 && chk_1)){
+            document.write("아무 해당ㄷ 되지 않습니다.");
+        }
+    </script>
+</body>
+</html>

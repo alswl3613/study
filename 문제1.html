@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=10;
+        var b=20;
+        var c=10;
+        var d=20;
+        var e=15;
+        var f=30;
+        //세미콜론
+
+        var result;
+        result=a+d+f>b;
+        document.write(result,"<br>");
+        result=(c+d+e+f)/4
+        document.write(result,"<br>");
+        //직접 result를 써서 숫자 별로입력하는게안라가
+        //변수를 재선언 var까지선언해버림
+        result=18.75>a
+        document.write(result,"<br>");
+
+        //누락된거
+        result=a>18.75?"true입니다.":"false입니다.";
+        result=!(f>a);
+        document.write(result,"<br>");
+
+    </script>
+
+<script>
+    var a=10;
+    var b=20;
+    var c=10;
+    var d=20;
+    var e=15;
+    var f=30;
+
+    var result;
+    a=a+d+f;
+    document.write(a>b,"<br>");
+    result=(c+d+e+f)/4
+    result=a>result?"true입니다.":"false입니다.";
+    document.write(result,"<br>");
+    result=!(f>a);
+    document.write(result,"<br>");
+
+</script>
+</body>
+</html>
