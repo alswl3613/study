@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+a {text-decoration:none; color:#333;}
+ul{list-style:noen;}
+img{border:none;}
+.cf:after{content:""; display:block; clear:both;}
+body{background:f2f2f2; font:"돋움",dotum,"굴림",gulim;}
+
+/* wrap */
+#wrap {width:1200px; margin: 0 auto;}
+
+/* header */
+#header{width:1200px; height:100px; position:relative;}
+.logo {width:300px; text-align:center; padding-top:50px;}
+.nav{width:60; position:absolute; top:60px; right:0px;}
+.nav li{height:40px; line-height:40px; text-align:center;}
+.nav-bg {width:100%; height:120px; position:absolute; top:100px; background: #a70800f; z-index:1000; display:none;}
+.mainMenu>li{float:left; width:25%; position:relative;}
+.mainMenu>li>a{font-size:17px; color:#333; display:block; font-weight:bold;}
+.subMenu{width:100%; height:120px; position:absolute; top:40px; background:#a7080f; z-index:2000; display:none;}
+.mainMenu>li:hover>a{background:#a7080f; color:#fff; font-weight:bold;}
+.subMenu a:hover{background:#f2f2f2; color:#333; font-weight:bold;}
+
+/* slide */
