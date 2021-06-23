@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+a {text-decoration: none; color:#333;}
+ul {list-style: none;}
+img {border:none;}
+.cf:after {content: ""; display: block; clear: both;}
+body {background: #fff;}
+
+
+/* ======== 레이아웃 =============== */
+#wrap {width:1000px; height: 650px; margin: 0 auto;}
+header {width:200px; height: 650px; float: left; background: #eee;}
+section {width:800px; height: 650px; float: left;}
+
+
+/* ======== header ============= */
+.logo {width:200px; height: 100px; padding-top: 30px;}
+.nav {width:180px; height: 550px; text-align: center; margin: 0 10px;}
+.nav a {display: block; height: 40px; }
+.nav li {line-height: 40px; border-bottom: 1px solid #eee;}
+.mainmenu >li > a {font-weight: bold; background: #555; color:#fff;}
+.submenu {display: none;}
+.mainmenu >li:hover > a {background:#e08691; color:#fff; }
+.submenu > li>a:hover {background:#e08691; color:#fff; }
+
+
+/* ======== slide ============== */
+#slide {width:800px; height: 350px; float: left; overflow: hidden;}
+.slideList {width:800px; height: 350px; }
+
+
+/* ======== contents =========== */
+#contents {width:800px; height: 200px;}
+#contents > div {float: left; box-sizing:border-box; height: 200px;}
+#contents h3 {font-size:15px; margin:5px 0 0 5px; padding: 7px; background: #e8e7d0;}
+#contents h3 span {font-size: 13px; }
+#contents span {float: right;}
+#contents a:hover {color:#9b9898;}
+
+.cont1 {width:35%; }
+.cont1 ul {margin: 10px 5px 10px 5px; }
+.cont1 ul li {font-size: 13px; line-height: 27px;}
+
+.cont2 {width:35%; }
+.cont2 ul li {float: left; margin: 23px 0 0 7px; }
+.cont2 ul li img {width:85px;}
+
+.cont3 {width:30%;}
+
+
+/* ======== footer ============= */
+#footer {float: left; width:800px; height: 100px; background: #ddd;}
+.foot1 {width:600px; float:left; font-size:14px; padding: 30px 0 0 20px; box-sizing: border-box;}
+.foot2 {width:200px; float:left; padding-top: 10px;}
+.foot2 .family_site {margin-top: 5px;}
+.foot2 select {width:180px; height:35px;}
+
+
+/* ====== layer-popup ========== */
+.layer-popup {display: none; width:400px; height:400px;position:absolute; top:50%; left:50%; transform: translate(-50%,-50%); z-index: 2000;}
+.button {position: absolute; bottom:30px; left:160px;}
+.button a {background: #000; color:#fff; padding: 5px 20px;}
+.button:hover {opacity: 0.7;}
+.layer-bg {background: rgba(0,0,0,0.6); position: absolute; top:0; left:0; width:100%; height:100%; z-index: 1000; display: none;}
+
+
+
+
+

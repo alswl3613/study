@@ -2,29 +2,28 @@ $(document).ready(function(){
      
 
         //menu
-        $(".nav > ul > li").mouseover(function(){
-            $(this).find(".submenu").stop().slideDown(200);
+        $(".mainmenu > li").mouseover(function(){
+            $(".submenu").stop().slideDown(400);
         });
-        $(".nav > ul > li").mouseout(function(){
-            $(this).find(".submenu").stop().slideUp(200);
+        $(".mainmenu > li").mouseout(function(){
+            $(".submenu").stop().slideUp(400);
         });
         
-    
         //slide 
-        $(".slide-cont").children("img:gt(0)").hide();
-        var current = 0;
+        var currentIndex = 0;
 
         setInterval(function(){
-            var next = (current +1) % 3; //3으로 나눈 나머지
-            $(".slide-cont").find("img").eq(current).fadeOut();
-            $(".slide-cont").find("img").eq(next).fadeIn();
-            current = next;
+            if(currentIndex < 2){
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
 
-            console.log(current);
-            console.log(next);
+            var slidePosition = currentIndex * (-300)+"px";
+            $(".slide-cont").animate({top:slidePosition},400);    
+
         },3000);
 
-    
         //tabmenu 
         var tabBtn = $(".tab-btn > ul > li");
         var tabCon = $(".tab-cont > ul");
@@ -40,10 +39,9 @@ $(document).ready(function(){
             tabCon.css("display","none");
             tabCon.eq(index).css("display","block");
         });
-    
-    
+        
         //popup
-        $(".con1 li.on").click(function(){
+        $(".tab-cont li.on").click(function(){
             $(".layer-bg").show();
             $(".popup").show();
         });
@@ -53,6 +51,7 @@ $(document).ready(function(){
         })
 
 });
+
 
 
 
