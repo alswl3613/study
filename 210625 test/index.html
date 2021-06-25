@@ -2,7 +2,10 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
-    <title>그린복지재단</title>
+    <title>Green복지재단</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script/script.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -12,7 +15,7 @@
                     <img src="images/logo.png" alt="로고">
                 </a>
             </h1>
-            <nav id="nav">
+            <nav class="nav">
                 <ul class="mainmenu cf">
                     <li><a href="#">재단소개</a>
                         <ul class="submenu">
@@ -44,31 +47,40 @@
                     </li>
                 </ul>
             </nav>
+            <div class="nav-bg"></div>
         </header>
-        <section id="banner" class="cf"><a href="#"></a></section>
+        <section id="banner" class="cf">
+            <div class="slide">
+                <div class="slide-count">
+                    <div class="slideImg"><a href="#"><img src="images/slide1.jpg" alt="슬라이드1"></a></div>
+                    <div class="slideImg"><a href="#"><img src="images/slide1.jpg" alt="슬라이드1"></a></div>
+                    <div class="slideImg"><a href="#"><img src="images/slide1.jpg" alt="슬라이드1"></a></div>
+                </div>
+            </div>
+        </section>
         <section id="contents" class="cf">
             <div class="con1">
                 <div class="tab-menu">
                     <h2><a href="#">공지사항<span>+더보기</span></a></h2>
-                </div>
-                <div class="tab-cont">
-                    <ul class="cf">
-                        <li class="on">
-                            <a href="#">2021년 5월<span>2021-04-30</span></a>
-                        </li>
-                         <li>
-                            <a href="#">2021년 5월<span>2021-04-30</span></a>
-                        </li>
-                        <li>
-                            <a href="#">2021년 5월<span>2021-04-30</span></a>
-                        </li>
-                        <li>
-                            <a href="#">2021년 5월<span>2021-04-30</span></a>
-                        </li>
-                        <li>
-                            <a href="#">2021년 5월<span>2021-04-30</span></a>
-                        </li>
-                    </ul>
+                    <div class="tab-cont">
+                        <ul class="cf">
+                            <li class="on">
+                                <a href="#">2021년 5월<span>2021-04-30</span></a>
+                            </li>
+                             <li>
+                                <a href="#">2021년 5월<span>2021-04-30</span></a>
+                            </li>
+                            <li>
+                                <a href="#">2021년 5월<span>2021-04-30</span></a>
+                            </li>
+                            <li>
+                                <a href="#">2021년 5월<span>2021-04-30</span></a>
+                            </li>
+                            <li>
+                                <a href="#">2021년 5월<span>2021-04-30</span></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="con2">
@@ -76,9 +88,11 @@
                     <h2>
                         <a href="#">갤러리<span>+더보기</span></a>
                     </h2>
-                    <div><a href="#"><img src="images/gallery1.jpg" alt="갤러리1"></a></div>
-                    <div><a href="#"><img src="images/gallery2.jpg" alt="갤러리2"></a></div>
-                    <div><a href="#"><img src="images/gallery3.jpg" alt="갤러리3"></a></div>
+                    <ul>
+                        <li><a href="#"><img src="images/gallery1.jpg" alt="갤러리1"></a></li>
+                        <li><a href="#"><img src="images/gallery2.jpg" alt="갤러리2"></a></li>
+                        <li><a href="#"><img src="images/gallery3.jpg" alt="갤러리3"></a></li>
+                    </ul>
                 </div>
             </div>
             <div class="con3">
@@ -96,10 +110,17 @@
                 </div>
             </div>
             <div class="foot3">
-                <input>
+                <select>
+                    <option>패밀리사이트</option>
+                    <option>패밀리사이트1</option>
+                    <option>패밀리사이트2</option>
+                    <option>패밀리사이트3</option>
+                    <option>패밀리사이트4</option>
+                </select>
             </div>
         </footer>
     </div>
+    <div class="layer-bg"></div>
     <div class="layer-popup">
         <div class="layer">
             <h3>심리 정서지원사업</h3>

@@ -5,22 +5,60 @@
 a{text-decoration:none; color:#333;}
 body{font:"돋움",dotum,"굴림",gulim;}
 img{border:none;}
+li{list-style:none;}
 .cf::before,.cf::after{display:block; content:''; clear:both;}
 
 /* wrap */
-#wrap {width:1200px; margin:0 auto;}
+#wrap {width:1200px; height:700px; margin:0 auto;}
 
 /* header */
-#header {}
+#header {width:1200px; height:100px; text-align:center; overflow: hidden;}
+#header .logo {width:300px; height:100px;float:left; padding-top:45px;}
+#header .nav {width:700px; height:100px; float:right; padding-top:60px; position: relative;}
+#header .nav > ul > li {width:25%; padding:10px 0; float:left;}
+#header .nav > ul > li a {color:#333;display:block;font-weight: bold;}
+#header .nav > ul > li:hover {background:#0b5e02;}
+#header .nav > ul > li:hover a{color:#fff;}
+#header .nav .submenu{display:none;}
+#header .nav .submenu li {height:40px; line-height:40px;}
+#header .nav .nav-bg {width:100%; height:360px; background:#0b5e02; position: absolute; left:0; top:0; z-index:2000;}
 
 /* banner */
-#banner {}
+#banner {width:1200px; height:300px;}
+.slide {width:1200px;  height:300px; overflow:hidden;}
+
 
 /* contents */
-#contents {}
+#contents {width:1200px; height:200px;}
+#contents > div{float:left;}
+#contents .con1{width:40%;}
+#contents .con1 .tab-menu {height:180px;padding:10px; background:#eee;}
+#contents .con1 .tab-menu h2{padding:5px;font-size:17px;background:#ccc;}
+#contents .con1 .tab-menu h2 span{font-size:15px;float:right;}
+#contents .con1 .tab-cont{font-size:14px;}
+#contents .con1 .tab-cont span{float:right;}
+#contents .con1 .tab-cont ul li{list-style:disc;padding:5px;}
+
+#contents .con2{width:30%; height:100%;}
+#contents .con2 .galley{height:180px; padding:10px; background:#eee;}
+#contents .con2 .galley h2{padding:5px;font-size:17px; background:#e2e2e2;}
+#contents .con2 .galley h2 span {float:right;font-size:15px;}
+#contents .con2 .galley ul li:first-child{margin-left:0;}
+#contents .con2 .galley ul li {position:relative;float:left; margin:20px 0 0 5px;}
+
+#contents .con3{width:30%;}
 
 /* footer */
-#footer {}
+#footer {width:1200px; height:100px;}
+#footer > div{float:left; height:100px;}
+#footer .foot1{width:300px; height:100px;}
+#footer .foot2{width:600px; height:100px;}
+#footer .copy {font-size:14px;}
+#footer .foot3{width:300px; height:100px;}
+#footer .foot3 select{width:80%; padding:5px;}
+
 
 /* layer-popup */
-.layer-popup{}
+.layer-popup{width:400px; height:600px; position:relative;}
+.layer-popup .layer{position: absolute; left:50%;}
+.layer-bg{background:rgba(254,254,254,0.6);}
