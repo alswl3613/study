@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* reset */
+*{margin:0; padding:0;}
+a{text-decoration:none; color:#333;}
+body{font:"돋움",dotum,"굴림",gulim;}
+img{border:none;}
+.cf::before,.cf::after{display:block; content:''; clear:both;}
+
+/* wrap */
+#wrap {width:1200px; margin:0 auto;}
+
+/* header */
+#header {}
+
+/* banner */
+#banner {}
+
+/* contents */
+#contents {}
+
+/* footer */
+#footer {}
+
+/* layer-popup */
+.layer-popup{}
