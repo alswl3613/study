@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+body{font: "돋움체",dotum,"굴림체",gulim;}
+a{text-decoration: none; color:#333;}
+li{list-style: none;}
+img{border:none;}
+.cf:after {content:""; clear:both; display:block; }
+
+/* wrap */
+#wrap{width:1200px; margin: 0 auto;}
+
+/* header */
+#header {width:100%; height:100px; text-align: center;}
+#header .logo {width:300px; float:left;  padding-top: 45px;}
+#header .nav {float:right; margin-top: 40px; width:600px;}
+#header .nav > ul > li {float:left; width:25%; position:relative; }
+#header .nav > ul > li > a {font-weight: bold; }
+#header .nav a {font-size:16px; display: block; }
+#header .nav li {height:40px; line-height: 40px;}
+#header .submenu {width: 100%; height:120px; position:absolute; top:40px; right:0; display: none; background: #eee; z-index:2000;}
+#header .nav > ul > li:hover > a{ background: #0066ad; color:#fff;}
+#header .submenu > li:hover { background: #0066ad; }
+#header .submenu > li:hover > a{color: #fff; font-weight: bold;}
+
+    
+/* slide */
+#slide {width:1200px; height:300px; overflow: hidden;}
+#slide .slide-cont {position: relative; width:1200px; height:300px;}
+
+/* contents */
+#contents {width:1200px; height:200px;}
+#contents > div {float:left; height:200px;}
+
+/* con1 */
+.con1 {width:40%; overflow: hidden;}
+.con1 .tab-menu {width:98%; padding-top: 10px; }
+.con1 .tab-menu .tab-btn li {float:left; text-align: center;  width:50%; padding:7px 0; background: #eee;}
+.con1 .tab-menu .tab-btn li a {font-size:17px;}
+.con1 .tab-menu .tab-btn ul li.active {background:#0066ad;}
+.con1 .tab-menu .tab-btn li.active a {color:#fff;}
+.con1 .tab-menu .tab-cont {padding:5px 0 5px 10px; position:relative; font-size: 15px; border:1px solid #ccc;}
+.con1 .tab-menu .tab-cont span {position:absolute; right:20px;}
+.con1 .tab-menu .tab-cont ul li{line-height: 28px; }
+.con1 .tab-menu .tab-cont .off li {float:left; padding:0 5px;}
+.con1 .tab-menu .tab-cont .off li:nth-child(3) {padding-right:0;}
+
+/* con2 */
+.con2 {width:30%; height:100%;}
+
+/* con3 */
+.con3 {width:30%; height:100%;}
+
+/* footer */
+#footer {width:1200px; height:100px; text-align: center;}
+#footer > div {float:left;}
+#footer a {font-size:13px; font-weight: bold;}
+#footer .foot1 {width:300px; text-align: center; padding-top: 30px;}
+#footer .foot2 {width:900px; margin: 30px 0px;}
+
+
+/* popup */
+.layer-bg {background: rgba(256,256,256,0.6); width:100%; height:100%; position: absolute; left:0; top:0; display: none;}
+.popup {width:500px; position:absolute; top:50%; left:50%; transform: translate(-50%,-50%); display: none;}
+.popup .button {background: #000; text-align: center; line-height: 170%; width:70px; height:30px; position:absolute; bottom:30px; left:50%; transform: translate(-50%)}
+.popup .button a {color:#fff; }

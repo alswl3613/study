@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+a {text-decoration: none; color:#333;}
+ul {list-style: none;}
+img {border:none;}
+.cf:after {content: ""; display: block; clear:both; }
+body {background: #f2f2f2;
+      font: "돋움",dotum,"굴림",gulim;
+}
+
+/*==========wrap==================*/
+#wrap {width:1200px; margin: 0 auto;}
+
+/*==========header================*/
+#header {width:1200px; height:100px; position: relative;}
+.logo {width:300px; text-align: center; padding-top:50px;}
+.nav {width:60%; position: absolute; top:60px; right:0px; }
+.nav li {height:40px; line-height: 40px; text-align: center; }
+.nav-bg {width:100%; height:120px; position: absolute; top:100px; background: #a7080f; z-index: 1000; display: none;}
+.mainMenu >li {float: left; width:25%; position: relative;}
+.mainMenu >li >a {font-size:17px; color:#333; display: block; font-weight: bold; }
+.subMenu {width:100%; height:120px; position: absolute; top:40px; background: #a7080f; z-index: 2000; display: none;}
+.subMenu a {color:#fff; display: block;}
+.mainMenu >li:hover > a {background: #a7080f; color:#fff; font-weight: bold;}
+.subMenu a:hover {background: #f2f2f2; color:#333; font-weight: bold;}
+
+
+
+/*==========slide=================*/
+#slide {width:1200px; height:300px; overflow: hidden;}
+#slide img {display: block;}
+.slideList {width:1200px; height:300px; }
+
+/*==========contents==============*/
+#contents {width:1200px; height:200px; border-bottom: 2px solid #ccc;}
+#contents >div {float: left;}
+#contents h3 {padding-bottom: 5px;  border-bottom: 2px solid #333; }
+
+.cont1 {width:40%; padding:10px; position: relative; box-sizing: border-box; height:200px;}
+.cont1 ul li {list-style: square; margin:10px 0 0 20px; line-height: 18px; word-spacing: -2px;}
+.cont1 ul li a {font-size:13px; color:#333; }
+.cont1 ul li span {font-size:13px; color:#333; position: absolute; right:10px; }
+.cont1 ul li:hover {text-decoration: underline; }
+
+.cont2 {width:30%; padding-top: 10px;}
+.cont2 ul {margin-top:10px;}
+.cont2 ul li {float: left; width:33.3%; text-align: center;}
+.cont2 ul li img {width:110px; }
+.cont2 ul li img:hover {opacity: 0.6;}
+
+.cont3 {width:30%;}
+
+
+/*==========footer================*/
+#footer {width:1200px; height:100px; }
+.copyright {width:900px; float: left; font-size:14px; margin-top: 20px;}
+.bottom-menu ul li {float: left; margin-right: 20px; font-weight: bold;}
+.copyright a {color:#333;}
+.copy {margin-top: 10px;}
+.f-site {width:300px; float: right; text-align: center; margin-top: 30px;}
+.f-site select {padding: 10px 40px; font-weight: bold;}
+
+/*==========layer-popup===========*/
+.layer-popup {width:450px; height:300px; background: #f2f2f2; border:2px solid #333; padding: 30px; z-index: 2000; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); display: none;}
+.layer-popup h4 {text-align: center; padding: 10px; border-bottom:2px solid #ccc;}
+.layer-popup a {color:#333;}
+.layer-popup h4 a {font-size:20px; }
+.layer-popup p {margin-top: 30px;}
+.layer-popup ul {margin-top: 10px; list-style: square; margin-left: 20px; line-height: 25px}
+.layer-popup .botton {text-align: center; margin-top: 30px;}
+.layer-popup .botton a {color:#fff; background: #a7080f; padding: 10px 30px; font-weight: bold;}
+.layer-bg {position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index: 1000; display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

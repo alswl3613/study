@@ -1,0 +1,96 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가로메뉴03</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1 class="logo">LOGO</h1>
+            <nav class="nav">
+                <ul class="clearfix">
+                    <li><a href="#">MENU-1</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                            <li><a href="#">subMenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MENU-2</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                            <li><a href="#">subMenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MENU-3</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MENU-4</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-bg"></div>
+        </header>
+        <!--//header-->
+        
+        <section id="banner">
+            <h2>IMG-slide</h2>
+            
+        </section>
+        <!--banner-->
+        
+        <section id="contents" class="clearfix">
+            <div class="cont1"><h3>공지사항</h3></div>
+            <div class="cont2"><h3>GALLERY</h3></div>
+            <div class="cont3"><h3>BANNER</h3></div>
+        </section>
+        <!-- contents -->
+        
+        <footer id="footer" class="clearfix">
+            <div class="foot1"><h3>LOGO</h3></div>
+            <div class="foot2"><h3>Copyright</h3></div>
+            <div class="foot3"><h3>SNS</h3></div>
+        </footer>
+        <!-- contents -->
+    </div>
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script>
+    $(".nav > ul > li").mouseenter(function(){
+        $(".submenu").stop().slideDown(300);
+        $(".nav-bg").stop().slideDown(300);
+    });
+    $(".nav > ul > li").mouseleave(function(){
+        $(".submenu").stop().slideUp(300);
+        $(".nav-bg").stop().slideUp(300);
+    });
+</script>
+
+
+
+
+
+
+
+
+
