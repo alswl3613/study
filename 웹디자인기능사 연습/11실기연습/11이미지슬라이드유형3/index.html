@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 슬라이드 유형3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1 class="logo">로고</h1>
+            <div class="nav">메뉴</div>
+        </header>
+        <!--header-->
+        <section id="banner">
+            <div class="slideList">
+                <div class="slideImg">
+                    <h2>이미지 슬라이드1</h2>
+                    <img src="images/ban01.jpg" alt="이미지1">
+                </div>
+                <div class="slideImg">
+                    <h2>이미지 슬라이드2</h2>
+                    <img src="images/ban02.jpg" alt="이미지2">
+                </div>
+                <div class="slideImg">
+                    <h2>이미지 슬라이드3</h2>
+                    <img src="images/ban03.jpg" alt="이미지3">
+                </div>
+            </div>
+        </section>
+        <!--banner-->
+        <section id="contents" class="clearfix">
+            <div class="cont1"><h3>공지사항</h3></div>
+            <div class="cont2"><h3>갤러리</h3></div>
+            <div class="cont3"><h3>팝업</h3></div>
+        </section>
+        <!--contents-->
+
+        <footer id="footer" class="clearfix">
+            <div class="foot1"><h3>로고</h3></div>
+            <div class="foot2"><h3>copyright</h3></div>
+            <div class="foot3"><h3>SNS</h3></div>
+        </footer>
+        <!--footer-->
+    </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script>
+        var slideCount = $(".slideImg").length;  // slideImg 의 갯수
+        //alert(slideCount);  => 3
+
+        var currentIndex = 0;
+        var slidePosition;
+
+        setInterval(function(){
+            if(currentIndex < slideCount-1){  //slideCount-1 이미지갯수에 신경안써도돼
+                currentIndex++;
+            }else{
+                currentIndex = 0;
+            }
+
+
+
+
+            slidePosition = currentIndex * (-1200)+"px";
+            /*
+                                0 * -1200px = 0
+                                1 * -1200px = -1200px;
+                                2 * -1200px = -2400px;
+                                3/0 * -1200px = -3600px/0
+                                1 * -1200px = -1200px;
+                                무한히 반복
+            */
+           $(".slideList").animate({
+               left:slidePosition
+           },400);
+        },3000);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>가로 유형1</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="script/script.js"></script>
+    </head>
+    <body>
+       <div id="wrap">
+            <header id="header">
+                <h1 class="logo">로고</h1>
+                <nav class="nav">
+                    <ul class="clearfix">
+                        <li><a href="#">개인</a>
+                            <ul class="submenu">
+                                <li><a href="#">조회</a></li>
+                                <li><a href="#">이체</a></li>
+                                <li><a href="#">공과금</a></li>
+                                <li><a href="#">예금/신탁</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">기업</a>
+                            <ul class="submenu">
+                                <li><a href="#">조회</a></li>
+                                <li><a href="#">이체</a></li>
+                                <li><a href="#">전자결제</a></li>
+                                <li><a href="#">수표/어음</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">금융상품</a>
+                            <ul class="submenu">
+                                <li><a href="#">저축상품</a></li>
+                                <li><a href="#">대출상품</a></li>
+                                <li><a href="#">투자상품</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">카드</a>
+                            <ul class="submenu">
+                                <li><a href="#">카드정보</a></li>
+                                <li><a href="#">카드신청</a></li>
+                                <li><a href="#">이용내역조회</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- //header -->
+            
+            <section id="banner">
+                <h2>이미지 슬라이드</h2>
+            </section>
+            <!-- //banner -->
+
+            <section id="contents" class="clearfix">
+                <div class="cont1"><h3>공지사항</h3></div>
+                <div class="cont2"><h3>배너</h3></div>
+                <div class="cont3"><h3>바로가기</h3></div>
+            </section>
+            <!-- //contents -->
+
+            <footer id="footer" class="clearfix">
+                <div class="foot1"><h3>로고</h3></div>
+                <div class="foot2"><h3>하단 메뉴</h3></div>
+                <div class="foot3"><h3>Copyright</h3></div>
+            </footer>
+            <!-- //footer -->
+       </div> 
+       <!-- //wrap -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+       <script>
+           $("nav > ul > li").mouseover(function(){
+               $(this).find(".submenu").stop().slideDown(200);
+               //$(this).find(".submenu").stop().show(200);
+           });
+           $("nav > ul > li").mouseout(function(){
+               $(this).find(".submenu").stop().slideUp(200);
+               //$(this).find(".submenu").stop().hide(200);
+           });
+       </script>
+    </body>
+</html>

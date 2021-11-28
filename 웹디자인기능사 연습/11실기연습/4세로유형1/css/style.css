@@ -1,0 +1,66 @@
+/*초기화*/
+* {margin:0; padding:0; color:#fff;}
+a {color:#333; text-decoration:none;}
+.clearfix::before, .clearfix::after {
+    display:block;
+    content:'';
+    clear:both;
+}
+
+
+/*레이아웃*/
+#wrap {width:1200px; margin:0 auto;}
+#side {
+    float:left; width:300px; height:850px; background:#ccc;
+    text-align:center;
+}
+#content {
+    float:left; width:900px; height:850px; background:#ddd;
+}
+
+/* header*/
+#side .logo { height:150px; background:#999;}
+#side .nav {height:700px; background: #888;}
+#side .nav li {background-color:#b39ddb;}
+#side .nav li a {display:block; padding:10px; color:#fff; }
+#side .nav li a:hover {background-color:rgba(0,0,0,0.3);}
+#side .nav ul li ul.submenu {display:none;}
+
+
+/* banner */
+#banner {height:450px;background:#777;}
+
+/* contents */
+#contents {
+
+}
+
+#contents > div {
+    float:left; width:33.3333%; height:300px;
+}
+
+#contents > div.cont1 {
+    background:#666;
+}
+
+#contents > div.cont2 {
+    background:#555;
+}
+
+#contents > div.cont3 {
+    background:#444;
+}
+
+
+/* footer */
+#footer {}
+#footer div {float:left;}
+#footer div.foot1 {width: 200px; height: 100px; background:#333;}
+#footer div.foot2 {width: 700px; height: 50px; background:#222;}
+#footer div.foot3 {width: 700px; height: 50px; background:#111;}
+
+
+
+
+
+

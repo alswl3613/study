@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가로유형1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1 class="logo">로고</h1>
+            <div class="nav">
+                <ul class="clearfix">
+                    <li><a href="#">MENU-1</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                            <li><a href="#">subMenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MENU-2</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                            <li><a href="#">subMenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MENU-3</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MENU-4</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!--header-->
+        <section id="banner">
+            <h2>이미지 슬라이드</h2>
+        </section>
+        <!--banner-->
+        <section id="contents" class="clearfix">
+            <div class="cont1"><h3>공지사항</h3></div>
+            <div class="cont2"><h3>갤러리</h3></div>
+            <div class="cont3"><h3>팝업</h3></div>
+        </section>
+        <!--contents-->
+
+        <footer id="footer">
+            <div class="foot1"><h3>로고</h3></div>
+            <div class="foot2"><h3>copyright</h3></div>
+            <div class="foot3"><h3>SNS</h3></div>
+        </footer>
+        <!--footer-->
+    </div>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script>
+        $(".nav > ul > li").mouseover(function(){
+           $(this).find(".submenu").stop().slideDown(200);
+        });
+
+        $(".nav > ul > li").mouseout(function(){
+           $(this).find(".submenu").stop().slideUp(200);
+        });
+
+    </script>
+</body>
+</html>

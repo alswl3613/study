@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/style.css">
+        <script></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <aside id="side">
+                <h1 class="logo">로고</h1>
+                <nav class="nav">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">이용안내</a>
+                            <ul class="submenu">
+                                <li><a href="#">이용방법</a></li>
+                                <li><a href="#">이용시간</a></li>
+                                <li><a href="#">이용요금</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">이벤트정보</a>
+                            <ul class="submenu">
+                                <li><a href="#">현장이벤트</a></li>
+                                <li><a href="#">온라인이벤트</a></li>
+                                <li><a href="#">이벤트예약</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">프로그램</a>
+                            <ul class="submenu">
+                                <li><a href="#">프로그램안내</a></li>
+                                <li><a href="#">온라인예약</a></li>
+                                <li><a href="#">단체예약상담</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="submenu">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">자주묻는질문</a></li>
+                                <li><a href="#">자료실</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <!-- //side -->
+            <section id="content">
+                <section id="banner">
+                    <h2></h2>
+                </section>
+                <!-- //banner -->
+                <section id="contents" class="clearfix">
+                    <div class="cont1"><h3>공지사항</h3></div>
+                    <div class="cont2"><h3>배너</h3></div>
+                    <div class="cont3"><h3>바로가기</h3></div>
+                </section>
+                <!-- //contents -->
+                <footer id="footer" class="clearfix">
+                    <div class="foot1"><h3>로고</h3></div>
+                    <div class="foot2"><h3>하단메뉴</h3></div>
+                    <div class="foot3"><h3>Copyright</h3></div>
+                </footer>
+                <!-- //footer -->
+            </section>
+            <!-- //content -->
+        </div>
+        <!-- //wrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $(".nav > ul > li").hover(
+                function(){
+                    //$(this).find(".submenu").stop().slideDown()//부드러운효과
+                    $(this).find(".submenu").stop().show()//바로보여지는효과
+                },
+                function(){
+                    //$(this).find(".submenu").stop().slideUp()//부드러운효과-->
+                    $(this).find(".submenu").stop().hide()//바로보여지는효과
+                });
+        </script>
+    </body>
+</html>

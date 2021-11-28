@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/style.css">
+        <script></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <aside id="side">
+                <h1 class="logo">로고</h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">이용안내</a>
+                            <ul class="submenu">
+                                <li><a href="#">이용방법</a></li>
+                                <li><a href="#">이용시간</a></li>
+                                <li><a href="#">이용요금</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">이벤트정보</a>
+                            <ul class="submenu">
+                                <li><a href="#">현장이벤트</a></li>
+                                <li><a href="#">온라인이벤트</a></li>
+                                <li><a href="#">이벤트예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">프로그램</a>
+                            <ul class="submenu">
+                                <li><a href="#">프로그램안내</a></li>
+                                <li><a href="#">온라인예약</a></li>
+                                <li><a href="#">단체예약상담</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">고객센터</a>
+                            <ul class="submenu">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">자주묻는질문</a></li>
+                                <li><a href="#">자료실</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <section id="content">
+                <section id="banner">
+                    <h2>슬라이드이미지</h2>
+                </section>
+                <section id="contents" class="clearfix">
+                    <div class="cont1">
+                        <div class="tab-menu">
+                            <div class="tab-btn">
+                                <ul>
+                                    <li class="active"><a href="#">공지사항</a></li>
+                                    <li><a href="#">갤러리</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-cont">
+                                <div>
+                                    1. Tab Menu DESC<br>
+                                    1. Tab Menu DESC<br>
+                                    1. Tab Menu DESC<br>
+                                </div>
+                                <div>
+                                    2. Tab Menu DESC<br>
+                                    2. Tab Menu DESC<br>
+                                    2. Tab Menu DESC<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont2"></div>
+                    <div class="cont3"></div>
+                </section>
+                <footer id="footer" class="clearfix">
+                    <div class="foot1"><h3></h3></div>
+                    <div class="foot2"><h3></h3></div>
+                    <div class="foot3"><h3></h3></div>
+                </footer>
+            </section>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $(".nav > ul > li").hover(
+                function(){
+                    $(this).find(".submenu").stop().slideDown();
+                },
+                function(){
+                    $(this).find(".submenu").stop().slideUp();
+                });
+        </script>
+        <script>
+            var tabBtn = $(".tab-btn > ul > li");
+            var tabCont = $(".tab-cont > div");
+
+            tabCont.hide().eq(0).show(); //eq(0) = 첫번째 박스
+
+            tabBtn.click(function(e){ //function(e)이벤트가 발생했을때
+                e.preventDefault();//색깔의기본기능을해제, e.preventDefault가 실행된다.
+                var target = $(this);//어떤버튼을 클릭했는지 타겟 저장
+                var index = target.index();//번호를 붙여줌
+                tabBtn.removeClass("active");//클래스를제거한다
+                target.addClass("active");//클래스를추가한다
+                tabCont.css("display","none");
+                tabCont.eq(index).css("display","block");//eq(index)해당되는부분에 display를 block해준다.
+            });
+        </script>
+    </body>
+</html>

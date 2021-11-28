@@ -1,0 +1,38 @@
+/* reset */
+*{margin:0; padding:0;}
+.clearfix::before,.clearfix::after{display:block; content:''; clear:both;}
+a{text-decoration:none; color:#333;}
+li{list-style:none;}
+table{border:none;}
+
+/* layout */
+#wrap{width:1200px; margin:0 auto;}
+
+/* header */
+#header{text-align: center;;}
+#header .logo{float:left;width:200px; height:100px; background:#777;}
+#header .nav{float:right;width:880px; height:100px; bakcground:#666;}
+#header .nav ul{padding-left:40%;bakcground:#555; margin-top:56px;}
+#header .nav > ul > li{float:left; text-align:center; width:25%;}
+#header .nav li a{display:block; padding:10px;background:rgba(0,0,0,0.4);}
+#header .nav li a:hover{background:rgba(0,0,0,0.3);}
+#header .nav li ul.submenu{display:none; padding-left:0;}
+
+/* banner */
+#banner{float:left; width:100%; height:300px; text-align: center; overflow:hidden;}
+
+/* slide */
+.slideList{position:relative; width:1200px; height:300px;}
+.slideList .slideImg{position:relative;}
+.slideList .slideImg h2{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); background:rgba(255,255,255,0.5); padding:10px 30px; border-radius:25px;}
+.slideList .slideImg img{display:block;}
+
+/* contents */
+#contents{height:200px;}
+#contents div{float:left; width:33.3%;}
+#contents .cont1{height:200px;background:#444;}
+#contents .cont2{height:200px;background:#333;}
+#contents .cont3{height:200px;background:#222;}
+
+/* footer */
+#footer{height:100px; width:100%; background:#444;}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 슬라이드 유형2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1 class="logo">로고</h1>
+            <div class="nav">메뉴</div>
+        </header>
+        <!--header-->
+        <section id="banner">
+            <div class="slideList">
+                <div class="slideImg">
+                    <h2>페이드 효과이미지1</h2>
+                    <img src="images/ban01.jpg" alt="이미지1">
+                </div>
+                <div class="slideImg">
+                    <h2>페이드 효과이미지2</h2>
+                    <img src="images/ban02.jpg" alt="이미지2">
+                </div>
+                <div class="slideImg">
+                    <h2>페이드 효과이미지3</h2>
+                    <img src="images/ban03.jpg" alt="이미지3">
+                </div>
+            </div>
+        </section>
+        <!--banner-->
+        <section id="contents" class="clearfix">
+            <div class="cont1"><h3>공지사항</h3></div>
+            <div class="cont2"><h3>갤러리</h3></div>
+            <div class="cont3"><h3>팝업</h3></div>
+        </section>
+        <!--contents-->
+
+        <footer id="footer" class="clearfix">
+            <div class="foot1"><h3>로고</h3></div>
+            <div class="foot2"><h3>copyright</h3></div>
+            <div class="foot3"><h3>SNS</h3></div>
+        </footer>
+        <!--footer-->
+    </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script>
+        $(".slideList").children("div:gt(0)").hide();
+        // gt(0) -> 0 이상    을 숨겨
+        // 이하는 lt?
+
+        var current = 0;
+
+        setInterval(function(){
+            var next = (current+1)%3;
+
+            $(".slideList").find("div").eq(current).fadeOut();
+            // find 는 자식의 자식의 자식을 다찾는거고
+            // children 은 바로 밑의 첫번째 자식만 찾는거 
+
+            $(".slideList").find("div").eq(next).fadeIn();
+            current = next;
+
+            // console.log(current);
+            // console.log(next);
+        },3000);
+
+    </script>
+</body>
+</html>

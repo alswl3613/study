@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none;}
+.clearfix::before, .clearfix::after {display: block; content:''; clear:both;}
+
+/* 레이아웃 */
+#wrap {width:1200px; margin:0 auto; text-align: center; color:#ccc;}
+
+/* header */
+#header {position: relative; text-align: center; background:#999 ;}
+#header .logo {position: absolute; left:0; top:0; z-index: 10; width: 250px; height: 100px; line-height: 100px;  background: #888; line-height: 100px;}
+#header .nav {position: relative; float: right; width: 60%; margin-top: 60px; }
+#header .nav ul li {position: relative; float:left; width:25%; height:40px; line-height: 40px; text-align: center; }
+#header .nav ul li a {display: block; font-size: 20px; color:#fff; background: #b39ddb;}
+#header .nav ul li ul.submenu {position: absolute; left:0; top:40px; display: none; padding-left:0; background: #b39ddb; height:160px; z-index: 2000;}
+#header .nav-bg {position: absolute; top:100px; left:0; width:100%; height:160px;  z-index: 1000; background: #b39ddb; display: none; }
+#header .nav ul li ul.submenu li {width:100%; }
+#header .nav ul li:hover > a {background: rgba(0,0,0,0.4);}
+
+/* banner */
+#banner {height: 300px; background: #777; line-height: 300px;}
+
+/* contents */ 
+#contents {line-height: 200px;}
+#contents > div {float: left; width:400px; height:200px; }
+#contents > div.cont1 {background: #666;}
+#contents > div.cont2 {background: #555;}
+#contents > div.cont3 {background: #444;}
+
+/* footer */
+#footer {width:100%; line-height: 100px;}
+#footer .foot1 {float: left; width:200px; height:100px; background: #333;}
+#footer .foot2 {float: left; width:800px; height:100px; background: #222;}
+#footer .foot3 {float: left; width:200px; height:100px; background: #111;}

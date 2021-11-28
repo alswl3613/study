@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear;both;}
+li {list-style: none;}
+a {text-decoration: none;}
+body {color:#ccc; text-align: center;}
+
+/* 레이아웃 */
+#wrap{width:1000px; background:#ccc; margin: 0 auto;}
+#side{float:left; width:200px; height:650px; background: #ccc;}
+#content{float:left; width:800px; height:650px; background: #ddd;}
+
+/* header */
+#side {text-align: center;}
+#side .logo {width:200px; height:100px; line-height: 100px; background: #999;}
+#side .nav {width:200px; height: 550px; background: #888;}
+#side .nav li {text-align: center; background: #f7ef91; position: relative;}
+#side .nav li a {padding: 10px; display: block; color:#fff; background: rgba(0,0,0,0.2);}
+#side .nav li ul.submenu {display:none ; position: absolute; right: -200px; top:0; width:200px; }
+#side .nav li:hover > a {background: rgba(0,0,0,0.4);}
+
+/* banner */
+#banner {width:800px; height:350px; background: #777; line-height: 350px;}
+
+/* contents */
+#contents {line-height: 200px;}
+#contents > div {float:left; width:33.3333%; height:200px;}
+#contents > div.cont1 {background: #666;}
+#contents > div.cont2 {background: #555;}
+#contents > div.cont3 {background: #444;}
+
+/* footer */
+#footer {}
+#footer > div {float:left;}
+#footer .foot1 {width:200px; height:100px; background: #333; line-height: 100px;}
+#footer .foot2 {width:600px; height:50px; background: #222; line-height: 50px;}
+#footer .foot3 {width:600px; height:50px; background: #111; line-height: 50px;}

@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+body{font: "돋움체",dotum,"굴림체",gulim;}
+a{text-decoration: none; color:#333;}
+li{list-style: none;}
+img{border:none;}
+.cf:after {content:""; clear:both; display:block; }
+.wrap{width:1200px; margin: 0 auto;}
+
+
+/* header */
+#header {width:100%; height:100px; text-align: center; background: #eee;}
+#header .logo {width:300px; float:left;  padding-top: 45px;}
+#header .nav {float:right; margin-top: 40px; width:600px;}
+#header .nav > ul > li {float:left; width:25%; position:relative; }
+#header .nav > ul > li > a {font-weight: bold; }
+#header .nav a {font-size:16px; display: block; }
+#header .nav li {height:40px; line-height: 40px;}
+#header .submenu {width: 100%; height:160px; position:absolute; top:40px; right:0; display: none; background: #eee; z-index:2000;}
+#header .nav > ul > li:hover > a{ background: #e94040; color:#fff;}
+#header .submenu > li:hover { background: #e94040; }
+#header .submenu > li:hover > a{color: #fff; font-weight: bold;}
+
+    
+/* slide */
+#slide {width:1200px; height:300px; margin: 0 auto; overflow: hidden;}
+#slide .slide-cont {position: relative; width:1200px; height:300px;}
+#slide .slide-cont img {display: block;}
+
+/* contents */
+#contents {width:1200px; height:200px; margin: 0 auto;}
+#contents > div {float:left;}
+#contents h3 {font-size:17px; margin:10px; padding: 7px; border-top: 1px solid #333; border-bottom: 1px solid #999; background: #eee;}
+#contents h3 span {font-size: 14px; }
+#contents span {float: right;}
+#contents a:hover {color:#e94040;}
+
+/* cont1 */
+.cont1 {width:40%; height:200px; position: relative; box-sizing: border-box; }
+.cont1 ul {margin:15px;}
+.cont1 ul li {font-size:14px; line-height:25px; list-style: disc; border-bottom: 1px solid #eee; margin-left:20px;}
+.cont1 ul li:hover {text-decoration: underline; }
+
+/* cont2 */
+.cont2 {width:30%; box-sizing: border-box; }
+.cont2 ul {margin:15px 10px 0 10px;}
+.cont2 ul li {float: left; width:33.3%; text-align: center;}
+.cont2 ul li img {width:110px; }
+.cont2 ul li img:hover {opacity: 0.6;}
+
+/* cont3 */
+.cont3 {width:30%;}
+
+
+/* footer */
+#footer {width:100%; height:100px; background: #000;}
+#footer .wrap > div {float:left; }
+#footer a {font-size:13px; font-weight: bold; color:rgb(121, 121, 121);}
+
+.foot1 {width:300px; text-align: center; padding-top: 30px;}
+.foot2 {width:600px; padding-top: 25px;}
+.foot3 {width:300px; text-align: center; padding-top: 25px;}
+
+
+/* popup */
+.layer-bg {background: rgba(0,0,0,0.5); width:100%; height:100%; position: absolute; left:0; top:0; display: none;}
+.popup {width:350px; height:350px; background: #fff; border:1px solid #222328; padding: 50px; position:absolute; top:50%; left:50%; transform: translate(-50%,-50%); display: none;}
+.popup h2 {text-align: center; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 10px 0; font-size: 1rem;}
+.popup p {margin-top:30px; font-size: 15px; line-height: 150%;}
+.popup .button {background: #e94040; text-align: center; line-height: 170%; width:70px; height:30px; position:absolute; bottom:30px; left:50%; transform: translate(-50%)}
+.popup .button a {color:#fff; }

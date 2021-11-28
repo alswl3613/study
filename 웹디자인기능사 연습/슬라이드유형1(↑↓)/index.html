@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>슬라이드위아래</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src=""></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="header">
+                <h1 class="logo">로고</h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">메뉴1</a>
+                            <ul class="submenu">
+                                <li><a href="#">하위메뉴1</a></li>
+                                <li><a href="#">하위메뉴2</a></li>
+                                <li><a href="#">하위메뉴3</a></li>
+                                <li><a href="#">하위메뉴4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">메뉴2</a>
+                            <ul class="submenu">
+                                <li><a href="#">하위메뉴1</a></li>
+                                <li><a href="#">하위메뉴2</a></li>
+                                <li><a href="#">하위메뉴3</a></li>
+                                <li><a href="#">하위메뉴4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">메뉴3</a>
+                            <ul class="submenu">
+                                <li><a href="#">하위메뉴1</a></li>
+                                <li><a href="#">하위메뉴2</a></li>
+                                <li><a href="#">하위메뉴3</a></li>
+                                <li><a href="#">하위메뉴4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">메뉴4</a>
+                            <ul class="submenu">
+                                <li><a href="#">하위메뉴1</a></li>
+                                <li><a href="#">하위메뉴2</a></li>
+                                <li><a href="#">하위메뉴3</a></li>
+                                <li><a href="#">하위메뉴4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="banner">
+                <div class="slideList">
+                    <div class="slideImg">
+                        <h2>이미지1</h2>
+                        <img src="images/ban01.jpg" alt="배너1">
+                    </div>
+                    <div class="slideImg">
+                        <h2>이미지2</h2>
+                        <img src="images/ban02.jpg" alt="배너1">
+                    </div>
+                    <div class="slideImg">
+                        <h2>이미지3</h2>
+                        <img src="images/ban03.jpg" alt="배너1">
+                    </div>
+                </div>
+            </section>
+            <section id="contents" class="clearfix">
+                <div class="cont1">1</div>
+                <div class="cont2">2</div>
+                <div class="cont3">3</div>
+            </section>
+            <footer id="footer" class="clearfix">
+                <div class="foot1"></div>
+                <div class="foot2"></div>
+                <div class="foot3"></div>
+            </footer>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            var currentIndex = 0;
+
+            setInterval(function(){
+                if(currentIndex < 2){
+                    currentIndex++;//++하나씩 증가시켜줌
+                } else {
+                    currentIndex = 0;
+                }
+                var slidePosition = currentIndex * (-300)+"px";//px 문자열
+                                                  
+                $(".slideList").animate({top:slidePosition},400);
+            },3000);//3초에 한번씩 함수를 설정한다.
+        </script>
+          <!-- //0 = 0
+          //1 = -300px
+          //2 = -600px
+          //0 
+          //1
+          //2 -->
+    </body>
+</html>
+

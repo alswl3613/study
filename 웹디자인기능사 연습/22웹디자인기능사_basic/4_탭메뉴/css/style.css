@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+.clearfix::before, .clearfix::after {display: block; content:''; clear:both;}
+a {text-decoration: none; color:#ccc; }
+li {list-style: none;}
+body {color:#ccc; }
+
+/* 레이아웃 */
+#wrap {width:1200px; margin:0 auto; }
+
+/* header */
+#header {line-height: 100px; }
+#header .logo {float: left; width: 300px; height: 100px; background:#999; text-align: center;}
+#header .nav {float: left; width: 900px; height: 100px; background: #888; text-align: center;}
+
+/* banner */
+#banner {height: 300px; background: #777; text-align: center; line-height: 300px; }
+
+/* contents */
+#contents {}
+#contents > div {float: left; width:400px; height:200px;}
+#contents > div.cont1 {background: #666; }
+#contents > div.cont2 {background: #555; text-align: center; line-height: 200px;}
+#contents > div.cont3 {background: #444; text-align: center; line-height: 200px;}
+
+.tab-menu {padding: 10px;}
+.tab-menu .tab-btn ul {overflow: hidden;}
+.tab-menu .tab-btn li {float:left; width:160px; background: #333; text-align: center;}
+.tab-menu .tab-btn li.active {text-decoration: underline;}
+.tab-menu .tab-btn li a {padding: 10px; display: block;}
+.tab-menu .tab-cont {background:#522d50; text-align: :left; padding: 20px;}
+
+/* footer */
+#footer {width:100%; line-height: 100px; text-align: center; }
+#footer .foot1 {float: left; width:300px; height:100px; background: #333;}
+#footer .foot2 {float: left; width:700px; height:100px; background: #222;}
+#footer .foot3 {float: left; width:200px; height:100px; background: #111;}

@@ -1,0 +1,50 @@
+/* reset */
+*{margin:0; padding:0;}
+.clearfix::before,.clearfix::after{display:block; content:''; clear:both;}
+a{color:#333; text-decoration:none;}
+li{list-style:none;}
+table{border:none;}
+
+/* layout */
+#wrap{width:1000px; height:650px; margin:0 auto; background:#ccc;}
+#side{float:left; width:200px; height:650px; background:#ddd;}
+#content{float:left; width:800px; height:650px;}
+
+/* header */
+#side .logo{float:left;width:200px; height:100px;background:#999;}
+#side .nav{float:left;width:200px; height:550px; background:#888;}
+#side .nav ul li{text-align:center; position:relative;}
+#side .nav ul li a{display:block; color:#fff; padding:10px; background:rgba(0,0,0,0.3);}
+#side .nav ul li a:hover{background:rgba(0,0,0,0.4);}
+#side .nav ul li ul.submenu{display:none; position:absolute; right:-200px; top:0; width:200px; background:#fff;}
+
+/* banner */
+#banner{float:left; width:800px; height:350px; background:#777;}
+
+/* contents */
+#contents{width:800px; height:200px; background:#666;}
+#contents > div{float:left; width:33.3%; height:200px;}
+#contents .cont1{background:#444;}
+#contents .cont2{background:#333;}
+#contents .cont3{background:#222;}
+
+/* layer-popup */
+.layer{display:none; width:500px; height:500px; background:#fff;border:2px solid #000;position:absolute;left:50%;top:50%;z-index:1000;margin-top:-250px;margin-left:-250px;}
+.layer h2{color:#000; padding:20px;}
+.layer .close{position:absolute; bottom:20px; right:20px;}
+.layer-bg{display:none;width:100%; height:100%; background:rgba(0,0,0,0.6); position:absolute; left:0; top:0;}
+
+/* tab-menu */
+.tab-menu{padding:10px;}
+.tab-menu .tab-btn ul{overflow:hidden;}
+.tab-menu .tab-btn li{float:left; width:110px; background:#9575cd; text-align:center;}
+.tab-menu .tab-btn li.active{text-decoration:underline;}
+.tab-menu .tab-btn li a{color:#fff; display:block; padding:10px;}
+.tab-menu .tab-cont{background:#c7a7a7; text-align: left; padding:20px;}
+
+/* footer */
+#footer{width:800px; height:100px; background:#555;}
+#footer > div{float:left;}
+#footer .foot1{width:200px; height:100px; background:#444;}
+#footer .foot2{width:600px; height:50px; background:#333;}
+#footer .foot3{width:600px; height:50px; background:#222;}

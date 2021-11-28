@@ -1,0 +1,36 @@
+/* reset */
+*{margin:0; padding:0;}
+.clearfix::before, .clearfix::after{display:block; content:''; clear:both;}
+a{color:#333; text-decoration:none;}
+li{list-style:none;}
+table{border:none;}
+
+/* wrap */
+#wrap{width:1200px; height:700px; background:#999; margin:0 auto;}
+
+/* header */
+#header{width:100%; height:100px; background:#888;}
+#header .logo{float:left; width:200px; height:100px; background:#333;}
+#header .nav{float:right; width:600px; margin-top:28px; background:#b39ddb;}
+#header .nav li{position:relative; float:left; width:25%; text-align:center;}
+#header .nav li a{display:block; padding:10px; font-size:20px; color:#fff;}
+#header .nav li a:hover{background:rgba(0,0,0,0.4);}
+#header .nav li ul.submenu{display:none; position:absolute; left:0; top:44px; background:#b39ddb;}
+#header .nav li ul.submenu li{width:100%;}
+
+/* banner */
+#banner{width:100%; height:300px; background:#777;}
+
+/* contents */
+#contents{width:100%;}
+#contents > div{float:left; width:400px; height:200px;}
+#contents > .cont1{background:#ccc;}
+#contents > .cont2{background:#ddd;}
+#contents > .cont3{background:#eee;}
+
+/* footer */
+#footer{width:100%; height:100px; background:#555;}
+#footer > div{float:left;}
+#footer > .foot1{width:200px; height:100px; background:#666;}
+#footer > .foot2{width:1000px; height:50px; background:#777;}
+#footer > .foot3{width:1000px; height:50px; background:#888;}

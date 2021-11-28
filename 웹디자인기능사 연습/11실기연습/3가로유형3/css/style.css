@@ -1,0 +1,71 @@
+/*초기화*/
+*{margin:0; padding:0;}
+/* .clearfix::before {}     가상의 요소
+.clearfix::after {} */
+
+.clearfix::before, .clearfix::after {
+    display:block;
+    content:''; /*가상요소를 넣을 컨텐츠 영역*/
+    clear:both; /*플롯의 성질을 차단시켜줌*/
+}
+
+a {
+   color:#333; text-decoration:none; 
+}
+
+ul,li {
+    list-style:none;
+}
+
+
+
+
+/*레이아웃*/
+#wrap {width:1200px; margin:0 auto;}
+
+
+/* header */
+#header {position:relative; text-align: center; background: #7e57c2;}
+#header .logo {position:absolute; left:0; top:0; z-index:10; float:left; width:250px; height:100px; background:#888;}
+#header .nav {position:relative; float:right; width:100%; margin-top: 53px; }
+
+#header .nav ul {padding-left: 40%;}
+#header .nav ul li {position:relative; float:left; width:25%;}
+#header .nav ul li a { display:block; padding:10px; font-size:20px; color:#fff; background: #b39ddb;}
+#header .nav ul li a:hover {background:rgba(0,0,0,0.4);}
+#header .nav ul li ul.submenu {display:none; position:absolute; top:44px; left:0; padding-left:0; background: #b39ddb; height:188px;}
+
+#header .nav ul li:first-child ul.submenu:after {
+    content:'';
+    position:absolute;
+    top:0;
+    left:-480px;
+    width:480px;
+    height:188px;
+    background: #b39ddb;
+}
+
+#header .nav ul li ul.submenu li {width:100%; }
+
+
+
+
+/* banner */
+#banner {height:300px; background:#666;}
+
+
+
+/* contents */
+#contents {}
+#contents div {float:left; width:400px; height:200px;} /*공통으로 잡아둠*/
+#contents div.cont1 {background:#555;}
+#contents div.cont2 {background:#444;}
+#contents div.cont3 {background:#333;}
+
+
+
+/* footer */
+#footer {}
+#footer .foot1 {float:left; width:200px; height:100px; background:#888;}
+#footer .foot2 {float:left; width:800px; height:100px; background:#777;}
+#footer .foot3 {float:left; width:200px; height:100px; background:#666;}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>JUST 쇼핑몰</title>
+        <link rel="stylesheet" href="">
+        <script src=""></script>
+        <style>
+        /* 여백 초기화 */
+        *{margin:0; padding:0;}
+        .clearfix::before, .clearfix::after{display:block; content:''; clear:both;}
+        a{color:#333; text-decoration:none;}
+        li{list-style:none;}
+        table{border:none;}
+        
+        /* 레이아웃 */
+        #wrap{width:1200px; height:700px; margin:0 auto; background:#999;}
+
+        /* header */
+        #header{width:100%; height:100px; background:#888;}
+        #header .logo{float:left; width:200px; height:100px; background:#000;}
+        #header .nav{float:right; width:800px; margin-top:40px; background:#444; } 
+        #header .nav ul {width:100%; text-align:center;}
+        #header .nav ul li {float:left; width:25%;}
+        #header .nav ul li a{display:block; padding:10px;}
+        #header .nav ul li a:hover{background:rgba(0,0,0,0.3);}
+        #header .nav ul li ul.submenu{width:100%;display:none;}
+
+        /* banner */
+        #banner{float:left; width:100%; height:300px; background:#777;}
+        #banner .slideList{width:1200px; height:300px; overflow:hidden;}
+        #banner .slideImg{position:relative;}
+        #banner .slideImg h2{position:absolute; left:50%; top:50%; translate(-50px,-50px); border-radius:30px; background:rgba(255,255,255,0.3); padding:10px 30px;}
+
+        /* contents */
+        #contents{float:left; width:100%; height:200px; background:#666;}
+        #contents > div{width:33.3%; float:left;}
+        #contents .cont1{height:200px; background:#333;}
+        #contents .cont2{height:200px; background:#222;}
+        #contents .cont3{height:200px; background:#111;}
+
+        /* footer */
+        #footer{float:left; width:100%; background:#555;}
+        #footer > div{float:left;}
+        #footer .foot1{width:200px; height:100px; background:#333;}
+        #footer .foot2{width:800px; height:100px; background:#222;}
+        #footer .foot3{width:200px; height:100px; background:#111;}
+
+        /* layerpopup */
+        .layer-bg{position:absolute; background:rgba(0,0,0,0.3)}
+        .layerpopup{display:none;position:relative; top:50%; left:50%; width:500px; height:500px; background:#ccc;}
+        .layerpopup h2{padding:20px;}
+        .layerpopup a{position:absolute; right:20px; bottom:20px;}
+        </style>
+    </head>
+    
+    <body>
+        <div id="wrap">
+            <header id="header">
+                <h1 class="logo">
+                    <img src="images/logo.png" alt="로고">
+                </h1>
+                <nav class="nav">
+                    <ul class="clearfix">
+                        <li><a href="#">fff</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">ddd</a>
+                                </li>
+                                <li>
+                                    <a href="#">asd</a>
+                                </li>
+                                <li>
+                                    <a href="#">fff</a>
+                                </li>
+                                <li>
+                                    <a href="#">wd</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">asdfwsdf</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">2fff</a>
+                                </li>
+                                <li>
+                                    <a href="#">hasdf</a>
+                                </li>
+                                <li>
+                                    <a href="#">zxcvas</a>
+                                </li>
+                                <li>
+                                    <a href="#">wwefg</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">werfwef</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">1234s</a>
+                                </li>
+                                <li>
+                                    <a href="#">fasdf</a>
+                                </li>
+                                <li>
+                                    <a href="#">zxcvasd</a>
+                                </li>
+                                <li>
+                                    <a href="#">asdfhq</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">zxzzz</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">xcdd</a>
+                                </li>
+                                <li>
+                                    <a href="#">ddasdf</a>
+                                </li>
+                                <li>
+                                    <a href="#">dwwfwf</a>
+                                </li>
+                                <li>
+                                    <a href="#">asdftyy</a>
+                                </li>
+                            </ul>
+                        </li>
+                 
+                    </ul>
+                </nav>
+            </header>
+            <section id="banner">
+                <div class="slideList">
+                    <div class="slideImg">
+                        <h2>이미지1</h2>
+                        <img src="images/ban01.jpg" alt="이미지1">
+                    </div>
+                    <div class="slideImg">
+                        <h2>이미지2</h2>
+                        <img src="images/ban02.jpg" alt="이미지2">
+                    </div>
+                    <div class="slideImg">
+                        <h2>이미지3</h2>
+                        <img src="images/ban03.jpg" alt="이미지3">
+                    </div>
+                </div>
+            </section>
+            <section id="contents" class="clearfix">
+                <div class="cont1">
+                    <div class="tab-btn">
+                       <ul>
+                           <li class="current"><a href="#">공지사항</a></li>
+                           <li><a href="#">갤러리</a></li>
+                       </ul>
+                    </div>
+                    <div class="tab-cont">
+                        <div class="layerPopup"> 
+                            1.블라블라<br>
+                            2.블라블라<br>
+                            3.블라블라<br>
+                            4.블라블라
+                        </div>
+                        <div> 
+                            <ul>
+                                <li><img src="" alt="갤러리이미지1"></li>
+                                <li><img src="" alt="갤러리이미지2"></li>
+                                <li><img src="" alt="갤러리이미지3"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont2">
+                    <img src="" alt="banner">
+                </div>
+                <div class="cont3">
+                    <img src="" alt="quick">
+                </div>
+            </section>
+            <footer id="footer"  class="clearfix">
+                <div class="foot1">
+                    <h3><img src="images/f_logo.gif" alt="푸터로고"></h3>
+                </div>
+                <div class="foot2">
+                    <address></address>
+                </div>
+                <div class="foot3">
+                    <img src="" alt="">
+                </div>
+            </footer>
+        </div>
+        <div class="layer-bg"></div>
+        <div class="layer">
+            <h2>타이틀</h2>
+            <a class="close">닫기</a>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+           $(".nav > ul > li").mouseover(function(){
+               $(this).find(".submenu").stop().slideDown(200);
+           });
+           $(".nav > ul > li").mouseout(function(){
+               $(this).find(".submenu").stop().slideUp(200);
+           });
+        </script>
+        <script>
+            $(".layerPopup").click(function(){
+                $(".layer").show();
+                $(".layer-bg").show();
+            });
+            $(".layer .close").click(function(){
+                $(".layer").hide();
+                $(".layer-bg").hide();
+            });
+        </script>
+
+    </body>
+</html>

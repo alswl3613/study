@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>슬라이드 위아래</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="header">
+                <h1 class="logo"></h1>
+                <nav class="nav">
+                    <ul class="clearfix">
+                        <li><a href="#">ddd</a>
+                            <ul class="submenu">
+                                <li><a href="#">asdf</a></li>
+                                <li><a href="#">fff</a></li>
+                                <li><a href="#">asdfsdf</a></li>
+                                <li><a href="#">sss</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">222</a>
+                            <ul class="submenu">
+                                <li><a href="#">fff</a></li>
+                                <li><a href="#">fff</a></li>
+                                <li><a href="#">asdfsdf</a></li>
+                                <li><a href="#">dff</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">333</a>
+                            <ul class="submenu">
+                                <li><a href="#">w</a></li>
+                                <li><a href="#">fff</a></li>
+                                <li><a href="#">asdfsdf</a></li>
+                                <li><a href="#">ss</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">44</a>
+                            <ul class="submenu">
+                                <li><a href="#">df</a></li>
+                                <li><a href="#">fff</a></li>
+                                <li><a href="#">asdfsdf</a></li>
+                                <li><a href="#">sdf</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="banner">
+                <div class="slideList">
+                    <div class="slideImg">
+                        <h2>이미지1</h2>
+                        <img src="images/ban01.jpg" alt="이미지1">
+                    </div>
+                    <div class="slideImg">
+                        <h2>이미지2</h2>
+                        <img src="images/ban02.jpg" alt="이미지2">
+                    </div>
+                    <div class="slideImg">
+                        <h2>이미지3</h2>
+                        <img src="images/ban03.jpg" alt="이미지3">
+                    </div>
+                </div>
+               
+            </section>
+            <section id="contents" class="clearfix">
+                <div class="cont1"></div>
+                <div class="cont2"></div>
+                <div class="cont3"></div>
+            </section>
+            <footer id="footer" class="clearfix">
+                <div class="foot1"></div>
+                <div class="foot2"></div>
+                <div class="foot3"></div>
+            </footer>
+         </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+       <script>
+           var slideCount = $(".slideImg").length;// slideCount = 3(자식이미지 갯수)
+           var curruentIndex = 0;
+           var slidePosition;
+
+           setInterval(function(){
+                if(curruentIndex < slideCount - 1){
+                    curruentIndex++;
+                } else {
+                    curruentIndex = 0;
+                }
+
+                slidePosition = curruentIndex * (-1200)+"px";//px 문자열   
+                $(".slideList").animate({left:slidePosition}, 400); //1장당 0.4초             
+           },3000);//3초에 1번씩 작동
+        </script> 
+            <!-- //0 * -1200px = 0
+            //1 * -1200px = -1200px
+            //2 * -1200px = -2400px
+            //3/0 * -1200px = -3600px/0
+            //1 * -1200px = -1200px
+            //2 * -1200px = -2400px
+           //alert(slideCount); -->
+        
+    </body>
+</html>

@@ -1,0 +1,28 @@
+/* reset */
+*{margin:0; padding:0;}
+.clearfix::before, .clearfix::after {display:block; content:''; clear:both;}
+
+/* 레이아웃 */
+#wrap{width:1200px; background:#ccc; margin:0 auto;}
+
+/* header */
+#header{width:100%;}
+#header .logo{width:250px; height:100px; float:left; background:#888;}
+#header .nav{width:950px; height:100px; float:left; background:#777;}
+
+/* banner */
+#banner{width:100%; height:300px; background:#666;}
+
+/* contents */
+#contents{width:100%;}
+#contents > div{float:left; width:400px; height:200px;}
+#contents .cont1{background: #555;}
+#contents .cont2{background: #444;}
+#contents .cont3{background: #333;}
+
+
+/* footer */
+#footer{width:100%;}
+#footer .foot1{float:left; width:200px; height:100px; background: #888;}
+#footer .foot2{float:left; width:800px; height:100px; background: #777;}
+#footer .foot3{float:left; width:200px; height:100px; background: #666;}

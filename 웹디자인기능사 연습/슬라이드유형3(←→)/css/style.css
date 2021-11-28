@@ -1,0 +1,40 @@
+/* reset */
+*{margin:0; padding:0;}
+.clearfix::before,.clearfix::after{display:block; content:''; clear:both;}
+a{color:#333; text-decoration:none;}
+li{list-style:none;}
+table{border:none;}
+
+/* 레이아웃 */
+#wrap{width:1200px; height:700px; margin:0 auto; background:#999;}
+
+
+/* header */
+#header{width:100%;}
+#header .logo{float:left; width:200px; height:100px; background:#888;}
+#header .nav{float:right; width:800px; height:100px; background:#777;}
+
+/* banner */
+#banner{width:1200px; height:300px; text-align:center; overflow:hidden;}
+
+/* slideList */
+.slideList{position:relative; width:3600px; height:300px;}
+.slideList .slideImg{position:relative; float:left; width:1200px; height:300px;}/*image inline구조라서 공간 생김*/
+.slideList .slideImg h2{position:absolute; left:50%; top:50%;
+                        transform:translate(-50%, -50%); padding:10px 30px;
+                         background:#fff;border-radius:25px;}
+.slideList .slideImg img{display:block;}
+
+/* contents */
+#contents{float:left;width:100%; background:#555;}
+#contents > div{float:left; width:400px; height:200px;}
+#contents > .cont1{float:left; background:#444;}
+#contents > .cont2{float:left;background:#333;}
+#contents > .cont3{float:left;background:#222;}
+
+/* footer */
+#footer{float:left;width:100%; height:100px;background:#444;}
+#footer > div{float:left;height:100px;}
+#footer > .foot1{width:200px; background:#333;}
+#footer > .foot2{width:800px;background:#222;}
+#footer > .foot3{width:200px;background:#111;}
